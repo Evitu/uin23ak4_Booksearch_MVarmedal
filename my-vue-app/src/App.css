@@ -1,0 +1,113 @@
+body {
+    background-color: #3a0646;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1600px;
+    margin: auto;
+  }
+  
+  .toppen {
+    overflow: hidden;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 4rem;
+  }
+  
+  .toppen a {
+    float: left;
+    margin-bottom: 5px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  .toppen .search-container {
+    display: flex;
+  }
+  
+  .toppen input[type=text] {
+    padding: 2px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #350630;
+    padding: 1rem;
+    padding-left: 3rem;
+    border: solid 2px #989898;
+  }
+  .toppen input[type=text]:hover {
+    border: solid 1.5px #dedede;
+    outline: none;
+    border-radius: 5px;
+  }
+  .toppen input[type=text]:focus {
+    border: solid 2px #877189;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .toppen .search-container button {
+    background: none;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 15px;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  
+  main img {
+    border-radius: 0px;
+  }
+  
+  main div {
+    background: #a415c0;
+    display: flex; 
+    border-radius: 0.5px;
+    padding: 0rem;
+    margin: 5rem;
+  }
+  
+  main div div {
+    padding-left: 2rem;
+    display: block;
+  }
+  
+  main div h2 {
+    width: 200px;
+  }
+  
+  main div a {
+    color: white;
+    background-color: #350630;
+    padding: 0.5rem;
+    border-radius: 0px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .toppen a, .topnav input[type=text], .topnav .search-container button {
+      display: block;
+      margin: 3;
+      text-align: left;
+      padding: 10px;
+    }
+    .toppen button {
+      visibility: hidden;
+    }
+    .toppen input[type=text] {
+      border: 2px solid #ccc;  
+    }
+  }
